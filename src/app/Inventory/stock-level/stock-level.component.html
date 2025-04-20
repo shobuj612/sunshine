@@ -1,0 +1,32 @@
+<div class="container">
+    <h1 class="text-warning" style="text-align: center;"> Raw Material List</h1>
+
+    <table class="table table-bordered table-hover">
+
+        <thead>
+            <tr>
+                <th>Material id</th>
+                <th>Material name</th>
+                <th>Material quantity</th>
+                <th>Material receivedDate</th>
+                <th>Material Received By</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (col of collect_stock; track col) {
+                <tr>
+                    <td>{{col.material_id}}</td>
+                    <td>{{col.material_name}}</td>
+                    <td>{{col.material_quantity}}</td>
+                    <td>{{col.material_receive_date}}</td>
+                    <td>{{col.material_received_by}}</td>
+                    <td>
+                        <button type="button" class="btn btn-success" (click)="Edit(col)">Edit</button>
+                        <button type="button" class="btn btn-warning" (click)="Delete(col)">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    </div>

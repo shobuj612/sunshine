@@ -1,0 +1,67 @@
+<div class="container mt-5">
+    <h1 class="text-success text-center mb-4">Add Employee</h1>
+  
+    <form>
+        <!--#employeeForm="ngForm" (ngSubmit)="submitEmployee()" class="d-flex flex-wrap gap-3 align-items-end"-->
+  
+      <div>
+        <label class="form-label">Employee ID</label>
+        <input type="text" class="form-control" name="employeeId" placeholder="ID"  required />
+          <!-- [(ngModel)]="employee.employeeId" -->
+      </div>
+  
+      <div>
+        <label class="form-label">Employee Name</label>
+        <input type="text" class="form-control" name="employeeName" placeholder="Name" required />
+          <!-- [(ngModel)]="employee.employeeName" --> 
+      </div>
+  
+      <div>
+        <label class="form-label">Joining Date</label>
+        <input type="date" class="form-control" name="joiningDate" required />
+          <!-- [(ngModel)]="employee.joiningDate" --> 
+      </div>
+  
+      <div>
+        <label class="form-label">Father Name</label>
+        <input type="text" class="form-control" name="fatherName" placeholder="Father Name" required />
+          <!-- [(ngModel)]="employee.fatherName" --> 
+      </div>
+  
+      <div>
+        <label class="form-label">Department ID</label>
+        <input type="text" class="form-control" name="departmentId" placeholder="Dept. ID" required />
+          <!-- [(ngModel)]="employee.departmentId" --> 
+      </div>
+  
+      <div>
+        <label class="form-label">Salary</label>
+        <input type="number" class="form-control" name="salary" placeholder="Salary" required />
+          <!-- [(ngModel)]="employee.salary" --> 
+      </div>
+  
+      <div>
+        <label class="form-label">Marital Status</label>
+        <input type="text" class="form-control" name="maritalStatus" placeholder="Single/Married" required />
+          <!-- [(ngModel)]="employee.maritalStatus" --> 
+      </div>
+  
+      <div>
+        <label class="form-label">Address</label>
+        <input type="text" class="form-control" name="address" placeholder="Address" required />
+          <!-- [(ngModel)]="employee.address" --> 
+      </div>
+  
+      <div>
+        <label class="form-label">Post Name</label>
+        <input type="text" class="form-control" name="postName" placeholder="Post" required />
+          <!-- [(ngModel)]="employee.postName" --> 
+      </div>
+  
+      <div>
+        <button type="submit" class="btn btn-success mt-4">Submit</button>
+      </div>
+  
+    </form>
+  </div>
+  

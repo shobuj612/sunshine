@@ -1,0 +1,54 @@
+<div class="container mt-5">
+    <h1 class="text-warning text-center mb-4">Add Supplier</h1>
+  
+    <form (ngSubmit)="supplierSubmit()">
+  
+      <div>
+        <label for="supplierId" class="form-label">Supplier ID</label>
+        <input type="text" class="form-control" id="supplierId" name="supplierId" [(ngModel)]="supplier.supplier_id" placeholder="ID" required />
+          <!-- [(ngModel)]="supplier.supplierId" --> 
+      </div>
+  
+      <div>
+        <label for="supplierName" class="form-label">Supplier Name</label>
+        <input type="text" class="form-control" id="supplierName" name="supplierName" [(ngModel)]="supplier.supplier_name" placeholder="Name" required />
+          <!-- [(ngModel)]="supplier.supplierName" --> 
+      </div>
+  
+      <div>
+        <label for="rawMaterialId" class="form-label">Raw Material ID</label>
+        <input type="text" class="form-control" id="rawMaterialId" name="rawMaterialId" [(ngModel)]="supplier.raw_material_id" placeholder="Material ID" required />
+          <!-- [(ngModel)]="supplier.rawMaterialId" --> 
+      </div>
+  
+      <div>
+        <label for="rawMaterialName" class="form-label">Raw Material Name</label>
+        <input type="text" class="form-control" id="rawMaterialName" name="rawMaterialName" [(ngModel)]="supplier.raw_material_name" placeholder="Material Name" required />
+          <!-- [(ngModel)]="supplier.rawMaterialName" --> 
+      </div>
+  
+      <div>
+        <label for="quantity" class="form-label">Quantity</label>
+        <input type="number" class="form-control" id="quantity" name="quantity" [(ngModel)]="supplier.raw_material_quantity" placeholder="Qty" required />
+          <!-- [(ngModel)]="supplier.quantity" --> 
+      </div>
+  
+      <div>
+        <label for="receivedDate" class="form-label">Received Date</label>
+        <input type="date" class="form-control" id="receivedDate" [(ngModel)]="supplier.raw_material_receicved_date" name="receivedDate" required />
+          <!-- [(ngModel)]="supplier.receivedDate" --> 
+      </div>
+  
+      <div>
+        <label for="receivedBy" class="form-label">Received By</label>
+        <input type="text" class="form-control" id="receivedBy" name="receivedBy" [(ngModel)]="supplier.raw_material_received_by" placeholder="Receiver" required />
+          <!-- [(ngModel)]="supplier.receivedBy" --> 
+      </div>
+  
+      <div>
+        <button type="submit" class="btn btn-warning mt-4">Submit</button>
+      </div>
+  
+    </form>
+  </div>
+  

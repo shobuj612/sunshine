@@ -1,0 +1,46 @@
+<div class="container mt-5">
+    <h2 class="text-primary text-center mb-4">Add New Order</h2>
+    <form  (ngSubmit)="submission()">
+      <div class="row g-3 align-items-center">
+        <div class="col">
+          <label for="orderId" class="form-label">Order ID</label>
+          <input type="text" class="form-control" id="orderId" name="orderId" [(ngModel)]="order.order_id" placeholder="Order ID">
+          <!-- [(ngModel)]="order.orderId" -->
+        </div>
+        <div class="col">
+          <label for="productId" class="form-label">Product ID</label>
+          <input type="text" class="form-control" id="productId" name="productId" [(ngModel)]="order.product_id" placeholder="Product ID">
+          <!-- [(ngModel)]="order.productId" -->
+        </div>
+        <div class="col">
+          <label for="orderName" class="form-label">Order Name</label>
+          <input type="text" class="form-control" id="orderName" name="orderName" [(ngModel)]="order.order_name" placeholder="Order Name">
+          <!-- [(ngModel)]="order.orderName" -->
+        </div>
+        <div class="col">
+          <label for="orderQuantity" class="form-label">Quantity</label>
+          <input type="number" class="form-control" id="orderQuantity" name="orderQuantity" [(ngModel)]="order.order_quantity" placeholder="Qty">
+          <!-- [(ngModel)]="order.orderQuantity" -->
+        </div>
+        <div class="col">
+          <label for="receivedDate" class="form-label">Received Date</label>
+          <input type="date" class="form-control" id="receivedDate" name="receivedDate" [(ngModel)]="order.order_received_date">
+          <!-- [(ngModel)]="order.receivedDate" -->
+        </div>
+        <div class="col">
+          <label for="deliveryDate" class="form-label">Delivery Date</label>
+          <input type="date" class="form-control" id="deliveryDate" name="deliveryDate" [(ngModel)]="order.order_delivery_date">
+          <!-- [(ngModel)]="order.deliveryDate" -->
+        </div>
+        <div class="col">
+          <label for="completedBy" class="form-label">Completed By</label>
+          <input type="text" class="form-control" id="completedBy" name="completedBy" [(ngModel)]="order.order_completed_by" placeholder="Completed By">
+          <!-- [(ngModel)]="order.completedBy" -->
+        </div>
+        <div class="col-auto mt-4">
+          <button type="submit" class="btn btn-success mt-2">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  

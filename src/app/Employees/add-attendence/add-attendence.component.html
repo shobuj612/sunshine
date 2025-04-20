@@ -1,0 +1,67 @@
+<div class="container mt-5">
+    <h1 class="text-warning text-center mb-4">Add Attendance</h1>
+  
+    <form>
+        <!--#attendanceForm="ngForm" (ngSubmit)="submitAttendance()" class="d-flex flex-wrap gap-3 align-items-end"-->
+  
+      <div>
+        <label class="form-label">Employee ID</label>
+        <input type="text" class="form-control" name="employeeId" placeholder="Employee ID"  required />
+          <!-- [(ngModel)]="attendance.employeeId" -->
+      </div>
+  
+      <div>
+        <label class="form-label">Department ID</label>
+        <input type="text" class="form-control" name="departmentId" placeholder="Dept ID" required />
+          <!-- [(ngModel)]="attendance.departmentId" --> 
+      </div>
+  
+      <div>
+        <label class="form-label">Employee Name</label>
+        <input type="text" class="form-control" name="employeeName" placeholder="Name" required />
+          <!-- [(ngModel)]="attendance.employeeName" --> 
+      </div>
+  
+      <div>
+        <label class="form-label">Post Name</label>
+        <input type="text" class="form-control" name="postName" placeholder="Post" required />
+          <!-- [(ngModel)]="attendance.postName" --> 
+      </div>
+  
+      <div>
+        <label class="form-label">Department Name</label>
+        <input type="text" class="form-control" name="departmentName" placeholder="Department" required />
+          <!-- [(ngModel)]="attendance.departmentName" --> 
+      </div>
+  
+      <div>
+        <label class="form-label">Present Date</label>
+        <input type="date" class="form-control" name="presentDate" required />
+          <!-- [(ngModel)]="attendance.presentDate" --> 
+      </div>
+  
+      <div>
+        <label class="form-label">Absent Date</label>
+        <input type="date" class="form-control" name="absentDate" />
+          <!-- [(ngModel)]="attendance.absentDate" --> 
+      </div>
+  
+      <div>
+        <label class="form-label">Total Absent</label>
+        <input type="number" class="form-control" name="totalAbsent" placeholder="Days" />
+          <!-- [(ngModel)]="attendance.totalAbsent" --> 
+      </div>
+  
+      <div>
+        <label class="form-label">Employee Status</label>
+        <input type="text" class="form-control" name="status" placeholder="Present/Absent" required />
+          <!-- [(ngModel)]="attendance.status" --> 
+      </div>
+  
+      <div>
+        <button type="submit" class="btn btn-warning mt-4">Submit</button>
+      </div>
+  
+    </form>
+  </div>
+  

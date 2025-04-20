@@ -1,0 +1,36 @@
+<div class="container">
+    <h1 class="text-success " style="text-align: center;">Order Table</h1>
+    <table class="table table-bordered table-hover ">
+        
+        <thead>
+            <tr>
+                <th>Order id</th>
+                <th>Product id</th>
+                <th>Order name</th>
+                <th>Order Received Date</th>
+                <th>Order Delivery Date</th>
+                <th>Order quantity</th>
+                <th>Order completed by</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for ( collect of collect_order; track collect) {
+            <tr>
+             <td>{{collect.order_id}}</td>
+             <td>{{collect.product_id}}</td>
+             <td>{{collect.order_name}}</td>
+             <td>{{collect.order_received_date}}</td>
+             <td>{{collect.order_delivery_date}}</td>
+             <td>{{collect.order_quantity}}</td>
+             <td>{{collect.order_completed_by}}</td>
+            <td>
+                <button type="button" class="btn btn-success" (click)="Edit(collect)">Edit</button>
+                <button type="button" class="btn btn-danger" (click)="Delete(collect)">Delete</button>
+            </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+

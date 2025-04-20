@@ -1,0 +1,58 @@
+<div class="container mt-4">
+    <h2 class="text-primary text-center">Add Quality Control Entry</h2>
+    <form>
+        <div class="row">
+            <div class="col-md-3 mb-3">
+                <label for="qcDate" class="form-label">QC Date</label>
+                <input type="date" class="form-control" id="qcDate" name="qcDate" required>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="orderId" class="form-label">Order ID</label>
+                <input type="text" class="form-control" id="orderId" name="orderId" placeholder="ORD-1001" required>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="productId" class="form-label">Product ID</label>
+                <input type="text" class="form-control" id="productId" name="productId" placeholder="PRD-01" required>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="batchId" class="form-label">Batch ID</label>
+                <input type="text" class="form-control" id="batchId" name="batchId" placeholder="BATCH-001" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <label for="inspectedQty" class="form-label">Quantity Inspected</label>
+                <input type="number" class="form-control" id="inspectedQty" name="quantityInspected" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="passedQty" class="form-label">Quantity Passed</label>
+                <input type="number" class="form-control" id="passedQty" name="quantityPassed" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="failedQty" class="form-label">Quantity Failed</label>
+                <input type="number" class="form-control" id="failedQty" name="quantityFailed" required>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="defectTypes" class="form-label">Defect Types</label>
+            <input type="text" class="form-control" id="defectTypes" name="defectTypes" placeholder="e.g., Loose stitching, Wrong size">
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="inspectorName" class="form-label">Inspector Name</label>
+                <input type="text" class="form-control" id="inspectorName" name="inspectorName" placeholder="Inspector full name" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="remarks" class="form-label">Remarks</label>
+                <textarea class="form-control" id="remarks" name="remarks" rows="2" placeholder="Any notes or observations"></textarea>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-success">Submit QC Entry</button>
+        </div>
+    </form>
+</div>

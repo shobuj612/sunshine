@@ -1,0 +1,36 @@
+<div class="container">
+
+    <h1 class="text-warning" style="text-align: center;">Suppliers List</h1>
+
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th> supplier id </th>
+                <th> supplier name </th>
+                <th> raw material id </th>
+                <th> raw material name </th>
+                <th>raw material quantity</th>
+                <th>raw material received date </th>
+                <th>raw material received by </th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (hicol of collect_suppliers; track hicol) {
+                <tr>
+                    <td>{{hicol.supplier_id}}</td>
+                    <td>{{hicol.supplier_name}}</td>
+                    <td>{{hicol.raw_material_id}}</td>
+                    <td>{{hicol.raw_material_name}}</td>
+                    <td>{{hicol.raw_material_quantity}}</td>
+                    <td>{{hicol.raw_material_receicved_date}}</td>
+                    <td>{{hicol.raw_material_received_by}}</td>
+                    <td>
+                        <button type="button" class="btn btn-success" (click)="Edit(hicol)">edit</button>
+                        <button type="button" class="btn btn-danger" (click)="Delete(hicol)">delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

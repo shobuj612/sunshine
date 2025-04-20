@@ -1,0 +1,88 @@
+<nav class="navbar navbar-expand-sm justify-content-center fixed-top "
+    style="border: 3px solid #ffb303 ; background-color: orange;">
+
+    <ul class="navbar-nav">
+        <li class="nav-item"><a href="/" class="nav-link  text-success">Home</a></li>
+        <li class="nav-item"><a href="about" class="nav-link  text-success">About</a></li>
+        <li class="nav-item"><a href="contact" class="nav-link  text-success">Contact</a></li>
+        <li class="nav-item  dropdown"><a href="" class="nav-link dropdown-toggle  text-success"
+                data-bs-toggle="dropdown">Notice</a>
+
+            <ul class="dropdown-menu ">
+                <li><a href="/tender" class="dropdown-item bg-light text-success ">Tender</a></li>
+                <li><a href="/etender" class="dropdown-item bg-dark text-success">e-Tender</a></li>
+                <li><a href="/circuler" class="dropdown-item bg-info text-success">Circuler </a></li>
+            </ul>
+        </li>
+    </ul>
+
+</nav>
+
+<!-- THIS IS  VERTICAL NAVBAR-->
+<nav class=" position-fixed p-3 "
+    style="top: 56px; left: 0; height: calc(100vh - 56px); width: 130px; border: 3px solid #ffb303; background-color: orange;">
+
+    <!-- THIS IS  A DASHBOARD TAB-->
+
+    <ul class="nav flex-column">
+        <li class="nav-item"><a href="/dashbord" class="nav-link ">Dashboard</a></li>
+
+        <!-- THIS IS ORDERS TAB-->
+        <li class="nav-item dropdown"><a href="" class="nav-link dropdown-toggle " data-bs-toggle="dropdown">Orders</a>
+            <ul class="dropdown-menu">
+                <li><a href="/allorder" class="dropdown-item bg-info text-success">All Orders</a></li>
+                <li><a href="/addorder" class="dropdown-item bg-dark text-success">Add Orders</a></li>
+            </ul>
+        </li>
+
+
+        <!-- THIS IS PRODUCT TAH-->
+        <li class="nav-item dropdown">
+            <a href="" class="nav-link dropdown-toggle " data-bs-toggle="dropdown">Inventory </a>
+            <ul class="dropdown-menu">
+                <li><a href="stocklevel" class="dropdown-item bg-light   text-success">Stock Lebel</a></li>
+                <li><a href="/stockin" class="dropdown-item   bg-dark     text-success">Stock In/out</a></li>
+                <li><a href="/supplier" class="dropdown-item  bg-info     text-success">Suppliers</a></li>
+                <li><a href="/addsuplier" class="dropdown-item  bg-warning  text-success"> Add Suppliers</a></li>
+            </ul>
+        </li>
+
+        <li class="nav-item dropdown"><a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
+            <ul class="dropdown-menu">
+                <li><a href="/addproduct" class="dropdown-item bg-light text-success">Add Products</a></li>
+                <li><a href="/allproduct" class="dropdown-item bg-info text-success">All Products</a></li>
+            </ul>
+        </li>
+
+        <li class="nav-item dropdown"><a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Employees
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="/allemployee" class="dropdown-item bg-dark     text-success">All Employees</a></li>
+                <li><a href="/addemployee" class="dropdown-item bg-warning   text-success">Add Employees</a></li>
+                <li><a href="/attendence" class="dropdown-item  bg-info     text-success">Attendence</a></li>
+                <li><a href="/addattendence" class="dropdown-item  bg-warning    text-success"> Add Attendence</a></li>
+                <li><a href="/payroll" class="dropdown-item     bg-dark    text-success">Pay roll</a></li>
+                <li><a href="/addpayroll" class="dropdown-item    bg-light     text-success"> Add Payroll</a></li>
+            </ul>
+
+        </li>
+
+        <li class="nav-item dropdown">
+            <a href="" class="nav-link dropdown-toggle " data-bs-toggle="dropdown">QC</a>
+            <ul class="dropdown-menu">
+                <li><a href="/qclog" class="dropdown-item bg-light text-success">QC Logs</a></li>
+                <li><a href="/addqclogs" class="dropdown-item bg-dark text-success">Add Qc Logs </a></li>
+                <li><a href="/criteria" class="dropdown-item bg-info text-success">Criteria Setting</a></li>
+            </ul>
+        </li>
+
+        <li class="nav-item dropdown"><a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Reports</a>
+            <ul class="dropdown-menu ">
+                <li><a href="/salesorders" class="dropdown-item bg-dark text-success">Sales&Orders</a></li>
+                <li><a href="/addsalesorders" class="dropdown-item bg-info text-success">Add Sales&Orders</a></li>
+                <li><a href="/employee" class="dropdown-item bg-warning text-success">Employee</a></li>
+                <li><a href="/inventory" class="dropdown-item bg-light text-success">Inventory</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,46 @@
+<div class="container mt-5">
+    <h1 class="text-warning text-center mb-4">Add Raw Material</h1>
+  
+    <form  (ngSubmit)="stockSumbit()">
+
+        <!--class="d-flex flex-wrap gap-2 align-items-end--->
+        
+        <!--THIS IS HELP TO SHOW THE  FORM IN THE VERTICALLY-->
+  
+      <div>
+        <label for="materialId" class="form-label">Material ID</label>
+        <input type="text" class="form-control" id="materialId" name="materialId" [(ngModel)]="stock.material_id" placeholder="ID"required />
+          <!-- [(ngModel)]="material.materialId" --> 
+      </div>
+  
+      <div>
+        <label for="materialName" class="form-label">Material Name</label>
+        <input type="text" class="form-control" id="materialName" name="materialName" [(ngModel)]="stock.material_name"  placeholder="Name" required />
+          <!-- [(ngModel)]="material.materialName" --> 
+      </div>
+  
+      <div>
+        <label for="materialQuantity" class="form-label">Quantity</label>
+        <input type="number" class="form-control" id="materialQuantity" name="materialQuantity" [(ngModel)]="stock.material_quantity"  placeholder="Qty" required />
+          <!-- [(ngModel)]="material.materialQuantity" --> 
+      </div>
+  
+      <div>
+        <label for="receivedDate" class="form-label">Received Date</label>
+        <input type="date" class="form-control" id="receivedDate" [(ngModel)]="stock.material_receive_date"  name="receivedDate" required />
+          <!-- [(ngModel)]="material.receivedDate" --> 
+      </div>
+  
+      <div>
+        <label for="receivedBy" class="form-label">Received By</label>
+        <input type="text" class="form-control" id="receivedBy" name="receivedBy" [(ngModel)]="stock.material_received_by"  placeholder="Receiver" required />
+          <!-- [(ngModel)]="material.receivedBy" --> 
+      </div>
+  
+      <div>
+        <button type="submit" class="btn btn-warning mt-4">Submit</button>
+      </div>
+  
+    </form>
+  </div>
+  

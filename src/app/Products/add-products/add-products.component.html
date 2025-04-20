@@ -1,0 +1,54 @@
+<div class="container mt-5">
+    <h1 class="text-success text-center mb-4">Add Product</h1>
+  
+    <form>
+  
+      <div>
+        <label for="productId" class="form-label">Product ID</label>
+        <input type="text" class="form-control" id="productId" name="productId" placeholder="ID" required />
+          <!-- [(ngModel)]="product.productId" --> 
+      </div>
+  
+      <div>
+        <label for="productName" class="form-label">Product Name</label>
+        <input type="text" class="form-control" id="productName" name="productName" placeholder="Name"  required />
+          <!-- [(ngModel)]="product.productName" -->
+      </div>
+  
+      <div>
+        <label for="productPrice" class="form-label">Price</label>
+        <input type="number" class="form-control" id="productPrice" name="productPrice" placeholder="Price" required />
+          <!-- [(ngModel)]="product.productPrice" --> 
+      </div>
+  
+      <div>
+        <label for="manufactureDate" class="form-label">Manufacture Date</label>
+        <input type="date" class="form-control" id="manufactureDate" name="manufactureDate" required />
+          <!-- [(ngModel)]="product.manufactureDate" --> 
+      </div>
+  
+      <div>
+        <label for="status" class="form-label">Status</label>
+        <input type="text" class="form-control" id="status" name="status" placeholder="Available/Sold" required />
+          <!-- [(ngModel)]="product.status" --> 
+      </div>
+  
+      <div>
+        <label for="quantity" class="form-label">Quantity</label>
+        <input type="number" class="form-control" id="quantity" name="quantity" placeholder="Qty" required />
+          <!-- [(ngModel)]="product.quantity" --> 
+      </div>
+  
+      <div>
+        <label for="department" class="form-label">Department</label>
+        <input type="text" class="form-control" id="department" name="department" placeholder="Dept. Name" required />
+          <!-- [(ngModel)]="product.department" --> 
+      </div>
+  
+      <div>
+        <button type="submit" class="btn btn-success mt-4">Submit</button>
+      </div>
+  
+    </form>
+  </div>
+  

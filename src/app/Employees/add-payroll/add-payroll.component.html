@@ -1,0 +1,55 @@
+<div class="container mt-5">
+    <h1 class="text-warning text-center mb-4">Payroll Information</h1>
+  
+    <form>
+        <!--#payrollForm="ngForm" (ngSubmit)="submitPayroll()" class="d-flex flex-wrap gap-3 align-items-end"-->
+  
+      <div>
+        <label class="form-label">Employee Information</label>
+        <textarea class="form-control" name="employeeInfo" rows="2" placeholder="Employee info"  required></textarea>
+          <!-- [(ngModel)]="payroll.employeeInfo" -->
+      </div>
+  
+      <div>
+        <label class="form-label">Attendance</label>
+        <textarea class="form-control" name="attendance" rows="2" placeholder="Attendance details" required></textarea>
+          <!-- [(ngModel)]="payroll.attendance" --> 
+      </div>
+  
+      <div>
+        <label class="form-label">Overtime</label>
+        <input type="number" class="form-control" name="overtime" placeholder="Hours"/>
+          <!-- [(ngModel)]="payroll.overtime" --> 
+      </div>
+  
+      <div>
+        <label class="form-label">Basic Salary</label>
+        <input type="number" class="form-control" name="basicSalary" placeholder="Basic Salary" required/>
+          <!-- [(ngModel)]="payroll.basicSalary" --> 
+      </div>
+  
+      <div>
+        <label class="form-label">Bonuses</label>
+        <input type="number" class="form-control" name="bonuses" placeholder="Bonuses"/>
+          <!-- [(ngModel)]="payroll.bonuses" --> 
+      </div>
+  
+      <div>
+        <label class="form-label">Deduction (Penalty)</label>
+        <input type="number" class="form-control" name="deduction" placeholder="Deduction"/>
+          <!-- [(ngModel)]="payroll.deduction" --> 
+      </div>
+  
+      <div>
+        <label class="form-label">Net Pay</label>
+        <input type="number" class="form-control" name="netPay" placeholder="Final Salary" readonly/>
+          <!-- [(ngModel)]="payroll.netPay" --> 
+      </div>
+  
+      <div>
+        <button type="submit" class="btn btn-warning mt-4">Submit</button>
+      </div>
+  
+    </form>
+  </div>
+  
