@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Order } from '../../Model/order.model';
 import { Router } from '@angular/router';
+import { OrderServiceService } from '../../Services/order.service.service';
 
 @Component({
   selector: 'app-all-orders',
@@ -14,7 +15,7 @@ export class AllOrdersComponent implements OnInit{
 
   collect_order:Order[]=[];
 
-  constructor(private router:Router){
+  constructor(private router:Router, private orderservice:OrderServiceService){
 
 
   }
@@ -22,7 +23,19 @@ export class AllOrdersComponent implements OnInit{
 
   ngOnInit(): void {
       
-    this.collect_order=JSON.parse(localStorage.getItem('b') || '[]');
+    this.loadOrders();
+
+  }
+
+  // this is the method to get all the data from the data base
+
+  loadOrders(){
+
+
+    this.orderservice.getAllOrders().subscribe(data=>{
+
+            this.collect_order=data;
+    });
 
   }
 
@@ -36,9 +49,12 @@ export class AllOrdersComponent implements OnInit{
     if(confirm("are you want to delete?")){
 
 
-      this.collect_order=this.collect_order.filter(f=>f!==a);
+     this.orderservice.deleteOrder(a.order_id).subscribe(()=>{
 
-      localStorage.setItem('b',JSON.stringify(this.collect_order))
+      this.loadOrders();
+     });
+
+     
     }
   }
 

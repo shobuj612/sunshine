@@ -2,7 +2,11 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Product } from '../../Model/product.model';
 import { Router } from '@angular/router';
+<<<<<<< HEAD
 
+=======
+import { NodeWithI18n } from '@angular/compiler';
+>>>>>>> 2f5447d6e63679442890b8270d5f6b4633e445c3
 
 @Component({
   selector: 'app-add-products',
