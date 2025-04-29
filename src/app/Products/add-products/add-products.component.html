@@ -1,47 +1,57 @@
 <div class="container mt-5">
     <h1 class="text-success text-center mb-4">Add Product</h1>
   
-    <form>
+    <form (ngSubmit)="productSumbit()">
   
       <div>
         <label for="productId" class="form-label">Product ID</label>
-        <input type="text" class="form-control" id="productId" name="productId" placeholder="ID" required />
+        <input type="text" class="form-control" id="productId" name="productId" [(ngModel)]="product.product_id" placeholder="ID" required />
+          <!-- [(ngModel)]="product.productId" --> 
+      </div>
+      <div>
+        <label for="productId" class="form-label">Manager ID</label>
+        <input type="text" class="form-control" id="managId" name="managId" [(ngModel)]="product.manager_id" placeholder=" Manaer ID" required />
+          <!-- [(ngModel)]="product.productId" --> 
+      </div>
+      <div>
+        <label for="productId" class="form-label">Buyer ID</label>
+        <input type="text" class="form-control" id="BuyerId" name="BuyerId" [(ngModel)]="product.buyer_id" placeholder=" Buyer ID" required />
           <!-- [(ngModel)]="product.productId" --> 
       </div>
   
       <div>
         <label for="productName" class="form-label">Product Name</label>
-        <input type="text" class="form-control" id="productName" name="productName" placeholder="Name"  required />
+        <input type="text" class="form-control" id="productName" name="productName" [(ngModel)]="product.product_name" placeholder="Name"  required />
           <!-- [(ngModel)]="product.productName" -->
       </div>
   
       <div>
         <label for="productPrice" class="form-label">Price</label>
-        <input type="number" class="form-control" id="productPrice" name="productPrice" placeholder="Price" required />
+        <input type="number" class="form-control" id="productPrice" name="productPrice" [(ngModel)]="product.product_price" placeholder="Price" required />
           <!-- [(ngModel)]="product.productPrice" --> 
       </div>
   
       <div>
         <label for="manufactureDate" class="form-label">Manufacture Date</label>
-        <input type="date" class="form-control" id="manufactureDate" name="manufactureDate" required />
+        <input type="date" class="form-control" id="manufactureDate" [(ngModel)]="product.manufacturing_date" name="manufactureDate" required />
           <!-- [(ngModel)]="product.manufactureDate" --> 
       </div>
   
       <div>
         <label for="status" class="form-label">Status</label>
-        <input type="text" class="form-control" id="status" name="status" placeholder="Available/Sold" required />
+        <input type="text" class="form-control" id="status" name="status" [(ngModel)]="product.product_status" placeholder="Available/Sold" required />
           <!-- [(ngModel)]="product.status" --> 
       </div>
   
       <div>
         <label for="quantity" class="form-label">Quantity</label>
-        <input type="number" class="form-control" id="quantity" name="quantity" placeholder="Qty" required />
+        <input type="number" class="form-control" id="quantity" name="quantity" [(ngModel)]="product.product_quantity" placeholder="Qty" required />
           <!-- [(ngModel)]="product.quantity" --> 
       </div>
   
       <div>
-        <label for="department" class="form-label">Department</label>
-        <input type="text" class="form-control" id="department" name="department" placeholder="Dept. Name" required />
+        <label for="department" class="form-label">Department name</label>
+        <input type="text" class="form-control" id="department" name="department" [(ngModel)]="product.department_name" placeholder="Dept. Name" required />
           <!-- [(ngModel)]="product.department" --> 
       </div>
   

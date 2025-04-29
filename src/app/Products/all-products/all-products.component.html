@@ -6,14 +6,38 @@
         <thead>
             <tr>
                 <th>Product id</th>
+                <th>Manager id</th>
+                <th>Buyer id</th>
                 <th>Product name</th>
                 <th>product price</th>
-                <th>product manufacturing date</th>
-                <th>product status</th>
-                <th>product quantity</th>
-                <th>Manufacturing department name</th>
+                <th>Manufacturing date</th>
+                <th>Product status</th>
+                <th>Product quantity</th>
+                <th>Department name</th>
+                <th>Action</th>
+                
             
             </tr>
         </thead>
+        <tbody>
+            @for (item of collect_product; track item) {
+                <tr>
+                    <td>{{item.product_id}}</td>
+                    <td>{{item.buyer_id}}</td>
+                    <td>{{item.manager_id}}</td>
+                    <td>{{item.product_name}}</td>
+                    <td>{{item.product_price}}</td>
+                    <td>{{item.product_quantity}}</td>
+                    <td>{{item.product_status}}</td>
+                    <td>{{item.manufacturing_date}}</td>
+                    <td>{{item.department_name}}</td>
+                    <td>
+                        <button  type="button" class="btn btn-success" (click)="Edit(item)" >Edit</button>
+                        <button  type="button" class="btn btn-danger" (click)="Delete(item)" >Delete</button>
+                    </td>
+                    
+                </tr>
+            }
+        </tbody>
     </table>
 </div>
